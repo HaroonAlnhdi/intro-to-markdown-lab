@@ -93,3 +93,37 @@ JavaScript Array examples contain a list of questions that are majorly asked in 
 
 ## JavaScript CheatSheet
 We have a Cheat Sheet on Javascript where we have covered all the important topics of Javascript to check those please go through Javascript Cheat Sheet-A Basic guide to JavaScript.
+
+
+## Methods pop/push, shift/unshift
+A queue is one of the most common uses of an array. In computer science, this means an ordered collection of elements which supports two operations:
+
+- `push` appends an element to the end.
++ `shift` get an element from the beginning, advancing the queue, so that the 2nd element becomes the 1st.
+
+ 1. Pop : Extracts the last element of the array and returns it:
+ ```js
+let fruits = ["Apple", "Orange", "Pear"];
+
+alert( fruits.pop() ); // remove "Pear" and alert it
+
+alert( fruits ); // Apple, Orange
+
+ ```
+ > Both `fruits.pop()` and `fruits.at(-1)` return the last element of the array, but `fruits.pop()` also modifies the array by removing it.
+
+
+ 2. push
+Append the element to the end of the array:
+```js
+let fruits = ["Apple", "Orange"];
+
+fruits.push("Pear");
+
+alert( fruits ); // Apple, Orange, Pear
+```
+> The call fruits.push(...) is equal to fruits[fruits.length] = ....
+
+## Refrences 
+
+[JavaScript.info](https://javascript.info/array)
